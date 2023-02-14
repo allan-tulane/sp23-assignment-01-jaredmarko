@@ -2,7 +2,7 @@
 
 # CMPS 2200 Assignment 1
 
-**Name:**_________________________
+**Name:** Jared Markowitz
 
 
 In this assignment, you will learn more about asymptotic notation, parallelism, functional languages, and algorithmic cost models. As in the recitation, some of your answer will go here and some will go in `main.py`. You are welcome to edit this `assignment-01.md` file directly, or print and fill in by hand. If you do the latter, please scan to a file `assignment-01.pdf` and push to your github repository. 
@@ -13,35 +13,35 @@ In this assignment, you will learn more about asymptotic notation, parallelism, 
 
   - 1a. Is $2^{n+1} \in O(2^n)$? Why or why not? 
 .  
-.  
+.  No, because 2^(n+1) asymptotically dominates 2^n. The first function will always be greater than the latter.
 .  
 .  
 . 
   - 1b. Is $2^{2^n} \in O(2^n)$? Why or why not?     
 .  
-.  
+.  No, because 2^(2^n) asymptotically dominates 2^n. 
 .  
 .  
 .  
   - 1c. Is $n^{1.01} \in O(\mathrm{log}^2 n)$?    
 .  
-.  
+.  No, becuase n^1.01 asymptotically dominates log^2 n.
 .  
 .  
 
   - 1d. Is $n^{1.01} \in \Omega(\mathrm{log}^2 n)$?  
 .  
-.  
+.  Yes, since n^1.01 asymptotically dominates log^2 n, it is big-Omega of log^2 n.
 .  
 .  
   - 1e. Is $\sqrt{n} \in O((\mathrm{log} n)^3)$?  
 .  
-.  
+.  No, sqrt(n) asymptotically dominates (logn)^3.
 .  
 .  
   - 1f. Is $\sqrt{n} \in \Omega((\mathrm{log} n)^3)$?  
 .  
-
+Yes, since sqrt(x) asymptotically dominates (logn)^3, it is big-Omega of (logn)^3.
 
 2. **SPARC to Python** (12 pts)
 
@@ -62,7 +62,7 @@ $$
 
   - 2b. (6 pts) What does this function do, in your own words?  
 
-.  
+.  Returns the sum of the previous two terms, as long as x >= 1.
 .  
 .  
 .  

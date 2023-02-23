@@ -15,8 +15,16 @@ def foo(x):
 
 
 def longest_run(mylist, key):
-  ### TODO
-  pass
+  ans = 0
+  consecNum = 0
+  for i in mylist:
+    if i == key:
+      consecNum+=1
+    else:
+      ans = max(consecNum, ans)
+      consecNum = 0
+  ans = max(ans, consecNum)
+  return ans
 
 
 class Result:
@@ -35,8 +43,17 @@ class Result:
 
 
 def longest_run_recursive(mylist, key):
-  ### TODO
-  pass
+  if mylist == []:
+        return 0
+  else:
+        if mylist[0] == mylist[1]:
+            smaller = mylist[1:]
+            result = longest_run_recursive(smaller)
+            return result + 1
+        else:
+            smaller = mylist[1:]
+            result = longest_run_recursive(smaller)
+            return result
 
 
 ## Feel free to add your own tests here.
